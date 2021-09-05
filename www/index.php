@@ -31,38 +31,10 @@ Date: 3 Sept 2021
     </head>
     <body>
         <div>
-            <h1>Random Integer Report</h1>
+            <h1 style="text-align: center">Random Integer Report</h1>
         </div>
-        <div>
-            <img src="TestBarChart.php" title="Bar Chart Example" alt="Bar Chart Example" />
-            <p>
-                <img src="Test2.php" title="Bar Test 2" alt="Bar Test 2" />
-            </p>
-            <?php
-            require_once 'BarChart.php';
-            $array = array(1, 2, 3, 4, 5);
-
-            $bc = new BarChart($array);
-            $bc->setFontFilename("../fonts/LiberationSans-Regular.ttf")
-                    ->setXAxisTitle("Fred", 10);
-            $text = $bc->toString();
-            echo "toString(): $text<br/>";
-
-            // Get the width and height of the text string as an associative array:
-            // $arr["width"], $arr["height"].
-            function getTextWidthHeight(string $text, float $font_size, float $angle = 0): array
-            {
-                // Create bounding box
-                $bbox = imageftbbox($font_size, $angle, "../fonts/LiberationSans-Regular.ttf", $text);
-
-                $arr = array();
-                $arr["width"] = abs($bbox[0]) + abs($bbox[4]);
-                $arr["height"] = abs($bbox[1]) + abs($bbox[5]);
-                return $arr;
-            }
-            $arr = getTextWidthHeight("Hi there!", 10)["height"];
-            print_r($arr);
-            ?>
+        <div style="text-align: center">
+            <img src="GetBarChart.php?width=600&height=400" title="Bar Chart Example" alt="Bar Chart Example" />
         </div>
     </body>
 </html>
