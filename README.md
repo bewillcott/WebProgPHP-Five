@@ -24,7 +24,7 @@ This file contains an example use case of the **BarChart** class.
 
 ### General Note
 You are welcome to use any part of the coding you find in this project, as it is Open Source.
-However, be mindful of the Copyright - GPL v3.
+However, be mindful of the License - GPL v3.
 
 Some of the code, as noted in the class file, has been copied from another source.
 The ideas are an accumulation of information from many sources, all from one internet
