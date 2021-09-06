@@ -34,7 +34,8 @@ Date: 3 Sept 2021
             <h1 style="text-align: center">Random Integer Report</h1>
         </div>
         <div style="text-align: center">
-            <img src="GetBarChart.php?width=600&height=400" title="Bar Chart Example" alt="Bar Chart Example" />
+            <img src="GetBarChart.php?width=600&height=400" title="Bar Chart"
+                 alt="Sorry, something broke the Bar Chart"  />
         </div>
     </body>
 </html>
