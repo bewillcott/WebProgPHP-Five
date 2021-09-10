@@ -56,8 +56,8 @@ for ($index = 0; $index < 100; $index++) {
 $year = date("Y");
 
 $png = new BarChart($arr);
-$png->setFontFilename("../fonts/LiberationSans-Regular.ttf")
-    ->setTitle("Web Programming PHP - Five", 14)
+$png->setFontFilename("fonts/LiberationSans-Regular.ttf")
+        ->setTitle("Web Programming PHP - Five", 14)
     ->setSubTitle("Random Integer Report", 12)
     ->setXAxisTitle("Numbers", 10)
     ->setYAxisTitle("Count", 10)
